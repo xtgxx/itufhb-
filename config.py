@@ -1,0 +1,30 @@
+import os
+
+API_ID = int(os.getenv("API_ID", "25617967"))
+API_HASH = os.getenv("API_HASH", "10555bea1cdfc7d2303fc13b7fd187cc")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8090736841:AAEi5FkCzBhccIU8RbZBxmPTDq2V7a2c4UE")
+
+MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://manishak4251:EXfIp5PR2kqBLU3x@cluster0.cqfxq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+
+# DEFAULT LIMITS (0 = unlimited)
+DEFAULT_DAILY_COUNT_LIMIT = int(os.getenv("DEFAULT_DAILY_COUNT_LIMIT", "10"))   # uploads per day
+DEFAULT_DAILY_SIZE_LIMIT_MB = int(os.getenv("DEFAULT_DAILY_SIZE_LIMIT_MB", "2000"))  # MB per day (2GB)
+PREMIUM_DAILY_COUNT_LIMIT = int(os.getenv("PREMIUM_DAILY_COUNT_LIMIT", "100"))
+PREMIUM_DAILY_SIZE_LIMIT_MB = int(os.getenv("PREMIUM_DAILY_SIZE_LIMIT_MB", "10000"))  # 10GB
+
+# Telegram bot per-file limit (~2GB)
+MAX_FILE_SIZE = 2 * 1024 * 1024 * 1024  # bytes
+
+ADMIN_IDS = [
+    int(x) for x in os.getenv("ADMINS", "7413682152").split(",") if x.strip().isdigit()
+]
+
+LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-1002256697098"))  # -100...
+BOT_USERNAME = os.getenv("BOT_USERNAME", "ProDemooBot")
+
+# Proxy support
+PROXY_URL = os.getenv("PROXY_URL", "").strip()
+PROXIES = {"http": PROXY_URL, "https": PROXY_URL} if PROXY_URL else None
+
+# cookies.txt path (for yt-dlp)
+COOKIES_FILE = os.getenv("COOKIES_FILE", "/app/cookies.txt")
