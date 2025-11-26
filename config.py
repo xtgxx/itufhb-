@@ -2,7 +2,7 @@ import os
 
 API_ID = int(os.getenv("API_ID", "25617967"))
 API_HASH = os.getenv("API_HASH", "10555bea1cdfc7d2303fc13b7fd187cc")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8090736841:AAEi5FkCzBhccIU8RbZBxmPTDq2V7a2c4UE")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8352161478:AAEHE91wtev6vZjdG6gwtOS_3dkqtrzYJX0")
 
 MONGO_URI = os.getenv("MONGO_URI", "mongodb+srv://manishak4251:EXfIp5PR2kqBLU3x@cluster0.cqfxq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
@@ -16,10 +16,10 @@ PREMIUM_DAILY_SIZE_LIMIT_MB = int(os.getenv("PREMIUM_DAILY_SIZE_LIMIT_MB", "1000
 MAX_FILE_SIZE = 2 * 1024 * 1024 * 1024  # bytes
 
 ADMIN_IDS = [
-    int(x) for x in os.getenv("ADMINS", "7413682152").split(",") if x.strip().isdigit()
+    int(x) for x in os.getenv("ADMINS", "8458169280").split(",") if x.strip().isdigit()
 ]
 
-LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-1002256697098"))  # -100...
+LOG_CHANNEL = int(os.getenv("LOG_CHANNEL", "-1002989761310"))  # -100...
 BOT_USERNAME = os.getenv("BOT_USERNAME", "ProDemooBot")
 
 # Proxy support
